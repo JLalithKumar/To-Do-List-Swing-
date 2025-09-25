@@ -20,7 +20,6 @@ public class TodoList extends JFrame {
 
         tasks = new ArrayList<>();
 
-        // Input Panel
         JPanel inputPanel = new JPanel(new BorderLayout());
         taskField = new JTextField();
         addButton = new JButton("➕ Add Task");
@@ -28,20 +27,16 @@ public class TodoList extends JFrame {
         inputPanel.add(addButton, BorderLayout.EAST);
         add(inputPanel, BorderLayout.NORTH);
 
-        // Task Panel inside Scroll
         taskPanel = new JPanel();
         taskPanel.setLayout(new BoxLayout(taskPanel, BoxLayout.Y_AXIS));
         JScrollPane scrollPane = new JScrollPane(taskPanel);
         add(scrollPane, BorderLayout.CENTER);
 
-        // Delete Button
         deleteButton = new JButton("🗑 Delete Selected Tasks");
         add(deleteButton, BorderLayout.SOUTH);
 
-        // Load tasks from file
         loadTasks();
 
-        // Actions
         addButton.addActionListener(e -> addTask());
         deleteButton.addActionListener(e -> deleteTasks());
 
@@ -103,4 +98,5 @@ public class TodoList extends JFrame {
         SwingUtilities.invokeLater(TodoList::new);
     }
 }
+
 
