@@ -9,6 +9,16 @@ To create a Java program that allows users to **add, delete, and mark tasks as c
 
 ---
 
+## 🛠 Tools & Technologies Used
+- Java (JDK 8 or higher)
+- Java Swing (GUI)
+- AWT (Event Handling)
+- Java I/O (File Handling)
+- Collections Framework (ArrayList)
+- SwingUtilities & Layout Managers (BoxLayout, JScrollPane)
+
+---
+
 ## ✨ Features
 - **➕ Add Task** – Input a task description to add a new task to the list.  
 - **✔ Mark Completed** – Use checkboxes to mark tasks as completed.  
